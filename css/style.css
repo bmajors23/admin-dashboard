@@ -1,0 +1,50 @@
+:root {
+    font-size: calc(.8rem + 0.6vw);
+}
+
+body {
+    border: solid;
+    height: 100vh;
+    display: flex;
+}
+
+.dashboard {
+    border: solid;
+    flex: auto;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 120px
+}
+
+.dashboard-head {
+    font-size: calc(1.2rem + 0.9vw)
+}
+
+.rightSide {
+    border: solid;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+
+.header {
+    border: solid;
+    flex: auto;
+    max-height: 20%;
+    /* height: 15%; */
+}
+
+.content-container {
+    flex: auto;
+    border: solid;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.content-container div {
+    border: solid;
+}
