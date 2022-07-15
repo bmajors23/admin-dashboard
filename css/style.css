@@ -1,9 +1,8 @@
 :root {
-    font-size: calc(.8rem + 0.6vw);
+    --font-size: calc(.8rem + 0.6vw);
 }
 
 body {
-    border: solid;
     height: 100vh;
     display: flex;
 }
@@ -15,11 +14,32 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-width: 120px
+    min-width: 120px;
+    text-overflow: ellipsis;
+    background-color:#4ade80;
+    font-size: var(--font-size);
+}
+
+.dashboard a {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard a img {
+    max-width: var(--font-size);
+    height: auto;
 }
 
 .dashboard-head {
-    font-size: calc(1.2rem + 0.9vw)
+    display: flex;
+    align-items: center;
+    font-size: calc(1rem + 0.7vw);
+    
+}
+
+.dashboard-head a img {
+    max-width: calc(1rem + 0.7vw);
+    height: auto;
 }
 
 .rightSide {
@@ -42,9 +62,33 @@ body {
     display: grid;
     gap: 20px;
     padding: 20px;
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem 2rem;
+    gap: 1rem;
 
 }
 
-.content-container div {
+.firstCells {
     border: solid;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.firstCells div {
+    border: solid;
+}
+
+.secondCells {
+    border: solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.secondCells div {
+    display: grid;
+    border: solid;
+    grid-template-rows: 1fr 1fr;
 }
