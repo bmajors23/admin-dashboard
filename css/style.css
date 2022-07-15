@@ -4,56 +4,98 @@
 
 body {
     height: 100vh;
+    margin: 0;
     display: flex;
+    font-family: sans-serif;
 }
 
 .dashboard {
-    border: solid;
     flex: auto;
-    max-width: 20%;
+    max-width: 15%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-width: 120px;
+    min-width: 180px;
+    max-width: 240px;
     text-overflow: ellipsis;
     background-color:#4ade80;
     font-size: var(--font-size);
+    padding: 20px;
 }
 
 .dashboard a {
     display: flex;
     align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.dashImg {
+    min-width: calc(2rem + 1vw);
+    margin-right: -5px;
 }
 
 .dashboard a img {
-    max-width: var(--font-size);
+    max-width: calc(var(--font-size) * 1.5);
     height: auto;
 }
 
 .dashboard-head {
-    display: flex;
-    align-items: center;
     font-size: calc(1rem + 0.7vw);
-    
-}
-
-.dashboard-head a img {
-    max-width: calc(1rem + 0.7vw);
-    height: auto;
 }
 
 .rightSide {
-    border: solid;
+
     display: flex;
     flex: auto;
     flex-direction: column;
 }
 
 .header {
-    border: solid;
     flex: auto;
-    max-height: 20%;
-    /* height: 15%; */
+    max-height: 15%;
+    min-height: 110px;
+}
+
+.topHeader {
+    display: flex;
+
+}
+
+.searchSide {
+    flex: auto;
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    width: 50%;
+
+}
+
+.searchSide input {
+    width: 100%;
+}
+
+.searchSide img {
+    height: 70%;
+}
+
+.profilePicSide {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.profilePicSide .bell {
+    height: 50%;
+}
+
+.bottomHeader {
+    border: solid;
 }
 
 .content-container {
