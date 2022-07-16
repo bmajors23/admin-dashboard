@@ -267,6 +267,12 @@ body {
     box-shadow: 0px 0px 2px;
 }
 
+.secondCells1 div {
+    width: 100%;
+    margin-top: 20px;
+    border: dashed 1px;
+}
+
 .secondCells2 {
     border-radius: 10px;
     display: flex;
@@ -281,6 +287,7 @@ body {
 
 .secondCells2:hover {
     box-shadow: 5px 5px 10px;
+    border: none;
 }
 
 
