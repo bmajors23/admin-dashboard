@@ -3,10 +3,10 @@
 }
 
 body {
-    height: 100vh;
     margin: 0;
     display: flex;
     font-family: sans-serif;
+    min-height: 100vh;
 }
 
 .dashboard {
@@ -16,10 +16,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-overflow: ellipsis;
     background-color:#4ade80;
     font-size: var(--font-size);
     padding: 20px;
+}
+
+.links {
+    position: sticky;
+    top: 20px;
 }
 
 .dashboard a {
@@ -48,13 +52,13 @@ body {
     display: flex;
     flex: auto;
     flex-direction: column;
-    box-shadow: 10px 10px 10px 10px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
     height: 140px;
+    width: 100%;
     padding-left: 2%;
 }
 
@@ -143,6 +147,7 @@ body {
     border: none;
     font-family: sans-serif;
     font-size: 18px;
+    margin-right: 10px;
 }
 
 .title {
@@ -270,4 +275,63 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.mobileDashboard {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+          flex-direction: column;
+          margin: 0;
+          max-height: 600px;
+    }
+
+    .dashboard {
+        max-width: none;
+        display: none;
+    }
+
+    .mobileDashboard {
+        display: flex;
+        background-color: #4ade80;
+        justify-content: space-evenly;
+        height: 100px;
+        position: sticky;
+        top: 0px;
+        min-width: 610px;
+    }
+
+    .mobileDashboard button {
+        background-color: #4ade80;
+        border: none;
+        min-height: 100px;
+    }
+
+    .header {
+        position: sticky;
+        min-width: 610px;
+        top: 100px;
+        bottom: 0px;
+        background-color: white;
+        border-bottom: solid;
+    }
+
+    .content-container {
+        position: static;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .secondCells {
+        margin-top: 10px;
+    }
+
+    .rightSide {
+        box-shadow: none;
+    }
+
 }
