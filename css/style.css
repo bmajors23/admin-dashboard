@@ -32,6 +32,15 @@ body {
     color: white;
     text-decoration: none;
     gap: 10px;
+    border-radius: 10px;
+}
+
+.dashboard a:hover {
+    font-size: calc(.85rem + 0.6vw);
+}
+
+.dashboard-head:hover {
+    font-size: calc(1.05 rem + 0.7vw);
 }
 
 .dashImg {
@@ -58,7 +67,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 140px;
-    width: 100%;
     padding-left: 2%;
 }
 
@@ -147,7 +155,11 @@ body {
     border: none;
     font-family: sans-serif;
     font-size: 18px;
-    margin-right: 10px;
+    margin-right: 10px;   
+}
+
+.rightBottomHeader button:hover {
+    box-shadow: 0px 0px 10px black;
 }
 
 .title {
@@ -285,7 +297,6 @@ body {
     body {
           flex-direction: column;
           margin: 0;
-          max-height: 600px;
     }
 
     .dashboard {
@@ -307,6 +318,14 @@ body {
         background-color: #4ade80;
         border: none;
         min-height: 100px;
+    }
+
+    .mobileDashboard button img {
+        border-radius: 10px;
+    }
+
+    .mobileDashboard button :hover {
+        box-shadow: 0px 0px 5px;
     }
 
     .header {
