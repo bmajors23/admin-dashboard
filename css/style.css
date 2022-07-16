@@ -105,6 +105,11 @@ body {
     gap: 10px;
 }
 
+.profPic {
+    height: 50px;
+    border-radius: 25px;
+}
+
 .profilePicSide .bell {
     height: 50%;
 }
@@ -136,7 +141,9 @@ body {
 }
 
 .leftBottomHeader img {
-    height: 100%;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
 }
 
 .leftBottomHeader p {
@@ -332,6 +339,31 @@ body {
 .mobileDashboard {
     display: none;
 }
+
+.secondCells21, .secondCells22, .secondCells23, .secondCells24 {
+    padding-left: 10px;
+}
+
+.secondCells22 img {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.secondCells21 img {
+    height: 50px;
+    border-radius: 25px;
+} 
+
+.secondCells23 img {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.secondCells24 img {
+    height: 50px;
+    border-radius: 25px;
+}
+
 
 @media screen and (max-width: 800px) {
     body {
