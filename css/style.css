@@ -19,6 +19,7 @@ body {
     background-color:#4ade80;
     font-size: var(--font-size);
     padding: 20px;
+    border-right: double;
 }
 
 .links {
@@ -32,15 +33,16 @@ body {
     color: white;
     text-decoration: none;
     gap: 10px;
-    border-radius: 10px;
+    padding: 8px;
 }
 
 .dashboard a:hover {
-    font-size: calc(.85rem + 0.6vw);
+    border-left: solid;
 }
 
-.dashboard-head:hover {
-    font-size: calc(1.05 rem + 0.7vw);
+.dashboard a:active {
+    box-shadow: 0 0px #666;
+    transform: translateY(2px);
 }
 
 .dashImg {
@@ -107,6 +109,15 @@ body {
     height: 50%;
 }
 
+.profilePicSide img:hover {
+    box-shadow: 0px 0px 3px;
+}
+
+.profilePicSide img:active {
+    box-shadow: 0 0px #666;
+    transform: translateY(2px);
+}
+
 .bottomHeader {
     flex: auto;
     display: flex;
@@ -156,10 +167,17 @@ body {
     font-family: sans-serif;
     font-size: 18px;
     margin-right: 10px;   
+    box-shadow: 0 3px #999;
 }
 
 .rightBottomHeader button:hover {
-    box-shadow: 0px 0px 10px black;
+    background-color: #7ae1a0;
+}
+
+.rightBottomHeader button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+
 }
 
 .title {
@@ -210,8 +228,12 @@ body {
 .firstCells .cell {
     border-radius: 10px;
     background-color: white;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 0px 0px 2px;
     padding: 20px;
+}
+
+.firstCells .cell:hover {
+    box-shadow: 5px 5px 10px;
 }
 
 .secondCells {
@@ -235,7 +257,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 0px 0px 2px;
 }
 
 .secondCells2 {
@@ -243,6 +265,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 0px 0px 2px;
+}
+
+.secondCells1:hover {
+    box-shadow: 5px 5px 10px;
+}
+
+.secondCells2:hover {
     box-shadow: 5px 5px 10px;
 }
 
@@ -281,6 +311,16 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    gap: 1px;
+}
+
+.projectButtons button:hover {
+    box-shadow: 0px 0px 3px;
+}
+
+.projectButtons button:active {
+    box-shadow: 0 0px #666;
+    transform: translateY(2px);
 }
 
 .cell {
@@ -325,7 +365,12 @@ body {
     }
 
     .mobileDashboard button :hover {
-        box-shadow: 0px 0px 5px;
+        box-shadow: 0px 0px 0px;
+    }
+
+    .mobileDashboard button:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(3px);
     }
 
     .header {
